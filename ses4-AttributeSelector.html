@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การเลือกทุกเอลิเมนต์ด้วย Attribute Selector</title>
+    <style>
+        h2[title="aTitle"]{
+            color: blue;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        img[alt]{
+            border: solid blue 2px;
+        }
+        h3[title~="title"]{
+            color: pink;
+        }
+        h3[title~="job"]{
+            font-style: italic;
+        }
+        h3[title~="jpy"]{
+            text-decoration: underline;
+        }
+        p[lang|="en"]{
+            background-color: blueviolet;
+        }
+        a[href^="https"]{
+            background-image: url(arrow.png);
+            background-repeat: on-repeat;
+            background-position: right;
+            padding-right: 30px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1><center>การเลือกทุกเอลิเมนต์ด้วย Attribute Selector</center></h1>
+    <h2 title="aTitle">Attribute ชื่อ title</h2>
+    <h2 title="firstTitle">มี Attribute ชื้อ title</h2>
+    <h1><center>การใช้งาน Attribute Selector</center></h1>
+    <div>
+        <article>
+            <h2>First Set</h2>
+            <img class="pic1" src="img/L20t4AYy_400x400.jpg" alt="มะเขือ">
+            <img class="pic2" src="img/large.jpg" alt="ลิ้น">
+            <img class="pic3" src="img/ดาวน์โหลด (1).jpg" alt="ใจ">
+        </article>
+        <hr>
+        <article>
+            <h2>First Set</h2>
+            <img class="pic4" src="img/ดาวน์โหลด (2).jpg" alt="โง่">
+            <img class="pic5" src="img/ดาวน์โหลด (3).jpg" alt="ฉลาด">
+            <img class="pic6" src="img/ดาวน์โหลด.jpg" alt="กวน">
+        </article>
+    </div>
+    <h3 title="title">ตัวที่ 1 ทดสอบกานใช้งาน Attribute~=value </h3>
+    <h3 title="job">ตัวที่ 2 ทดสอบกานใช้งาน Attribute~=value </h3>
+    <h3 title="joy">ตัวที่ 3 ทดสอบกานใช้งาน Attribute~=value </h3>
+    <div>
+        <p lang="en">Hello</p>
+        <p lang="en-us">Hi</p>
+        <p lang="es">Hola</p>
+        <p lang="th">สวัสดี</p>
+    </div>
+    <h2><center>การใช้งาน Attribute^=value</center></h2>
+    <ul>
+        <li><a href="https://www.google.co.th">กูเกิ้ล</a></li>
+        <li><a href="https://www.apple.com">แอปเปิ้ล</a></li>
+        <li><a href="https://www.microsoft.com">ไมโครซอฟต์</a></li>
+    </ul>
+</body>
+</html>
