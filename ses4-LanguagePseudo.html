@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การเลือกทุกเอลิเมนต์ด้วย Pseudo-Class Selector</title>
+    <style>
+    :dir(rtl){
+            background-color: deeppink;
+        }
+        p:lang(es){
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>การเลือกทุกเอลิเมนต์ด้วย Pseudo-Class Selector</h1>
+    <div>Welcome to learn CSS Language</div>
+    <div dir="rtl">ברוכים הבאים ללמוד CSS</div>
+    <p lang="en">Hello!</p>
+    <p lang="es">Hola!</p>
+    <p lang="th">สวัสดี</p>    
+</body>
+</html>
