@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การเลือกเอลิเมนต์ของฟอร์ม exabled | disbled | read-oldy | read-write | placeholder-shown </title>
+    <style>
+     /*   input{
+            border: 2px solid red;
+            border-radius: 3px;
+        } */
+        input:enbled{
+            color: blue;
+        }
+        input:disabled{
+            color: #eee;
+        }
+        textarea:read-write{
+            background-color: pink;
+            border-radius: 4px;
+        }
+        input:placeholder{
+            color: yellow;
+        }
+        input:read-only{
+            color: red;
+        }
+        input:blank{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>การเลือกเอลิเมนต์ของฟอร์ม exabled | disbled | read-oldy | read-write | placeholder-shown </h1>
+    <form action="">
+        <p><label for="">ชื่อสินค้า : </label>
+            <input type="text" id="name" name="naem">
+        </p>
+        <p>
+            <label for="">สี : </label>
+            <input type="text" id="color" name="color" disabled>
+        </p>
+        <p>
+            <label for="">ที่อยู่ : </label>
+            <textarea type="text" id="address" name="address"></textarea>
+        </p>
+        <p>
+            <label for="tel">เบอร์โทร : </label>
+            <input type="tel" name="tel" placeholder="08x-xxx-xxxx">
+        </p>
+        <p>
+            <label for="">ขนส่ง : </label>
+            <input type="ship" value="ไปรษณีย์" readonly>
+        </p>
+    </form>
+</body>
+</html>
