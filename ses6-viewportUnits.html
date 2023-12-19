@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การใช้งาน Viewport units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #333;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            padding-top: 15rem;
+        }
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            background-color: aliceblue;
+            color: black;
+            padding: 0.75rem 2rem;
+            margin: 20px;
+            border-radius: 5px 1px 5px 1px;
+        }
+        .btn:hover{
+            background-color: #999;
+            color: white;
+        }
+    </style>
+</head>
+<!--
+    ค่าต่างๆ ของ Viewport Units
+    -vw = บอกสัดส่วนความกว้างของ viewport (%) เช่น หากเรามีจอกว้าง 100px
+            ต้องการแสดงผล 10% ของความกว้างทั้งหมด ค่าของพื้นที่ก็คือ 10px
+    -vh = บอกสัดส่วนความสูงของ viewport (%)
+    -vmin = ค่า % ต่ำสุดของ viewport
+    -vmax = ค่า % สูงสุดของ viewport
+
+-->
+<body>
+    <header>
+        <h1>welcome to CSS Tutorial</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae esse perferendis quod consequuntur maxime. Cum modi placeat explicabo magni, debitis, dicta hic veniam quas quam consequatur atque magnam, voluptatibus ipsa culpa laboriosam. Dolores, deleniti est quisquam asperiores, quae eaque neque delectus, reprehenderit alias inventore aut? Voluptate numquam repudiandae dolor ad.</p>
+        <a href="" class="btn">เข้าชมเว็บไซต์</a>
+    </header>
+</body>
+</html>
