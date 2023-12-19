@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การใช้งาน Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flex-container{
+            display: flex;
+            background-color: aqua;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .item{
+            background-color: orange;
+            border: 1px solid black;
+            width: 200px;
+            /* margin: 10px; */
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item">
+            <h3> Item 1 </h3>
+        </div>
+        <div class="item">
+            <h3> Item 2 </h3>
+        </div>
+        <div class="item">
+            <h3> Item 3 </h3>
+        </div>
+        <div class="item">
+            <h3> Item 4 </h3>
+        </div>
+        <div class="item">
+            <h3> Item 5 </h3>
+        </div>
+        <div class="item">
+            <h3> Item 6 </h3>
+        </div>
+        <div class="item">
+            <h3> Item 7 </h3>
+        </div>
+        <div class="item">
+            <h3> Item 8 </h3>
+        </div>
+        <div class="item">
+            <h3> Item 9 </h3>
+        </div>
+    </div>
+    <hr>
+    <h2>การกำหนดทิศทางด้วย Flex-direction</h2>
+    <ul>
+        <li>
+           row (ค่าเริ่มต้น) จัดวางในแนวตั้ง
+        </li>
+        <li>
+            column จัดวางในแนวตั้ง
+        </li>
+        <li>
+            row-reverse จัดวางแนวนอน เริ่มจากขวา
+        </li>
+        <li>
+            column-reverse จัดวางแนวตั้ง เริ่มจากล่าง
+        </li>
+    </ul>
+</body>
+</html>
