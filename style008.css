@@ -13,7 +13,7 @@
 }
 
 body{
-    color: pink;
+    background: black;
 }
 
 .header{
@@ -22,7 +22,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: pink;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,7 @@ body{
 .logo {
     position: relative;
     font-size: 35px;
-    color: pink;
+    color: black;
     text-decoration: none;
     font-weight: 600;
 }
@@ -51,7 +51,7 @@ body{
 
 .navbar a {
     font-size: 18px;
-    color: pink;
+    color: black;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -60,7 +60,7 @@ body{
 
 .navbar a:hover,
 .navbar a.active {
-    color: #fff;
+    color: black;
 }
 
 .home{
@@ -79,6 +79,7 @@ body{
 
 .home-content h1 {
     position: relative;
+    color: pink;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
@@ -119,6 +120,7 @@ body{
     position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
+    color: #fff;
 }
 
 .home-content p::before {
@@ -152,59 +154,6 @@ body{
     animation: showRight 1s ease forwards;
     animation-delay: 1.9s;
     z-index: 2;
-}
-
-.btn-box a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #fff;
-    border: 2px solid #fff;
-    border-radius: 8px;
-    font-size: 19px;
-    color: #081b29;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.btn-box a:hover {
-    color: #fff;
-}
-
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #fff;
-}
-
-.btn-box a:nth-child(2):hover{
-    color: #081b29;
-}
-
-.btn-box a:nth-child(2)::before {
-    background: #fff;
-}
-
-.btn-box a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #081b29;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box a:hover:before {
-    width: 100%;
 }
 
 .home-imgHover {
